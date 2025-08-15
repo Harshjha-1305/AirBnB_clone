@@ -21,8 +21,7 @@ The app allows users to explore listings, view property details, and simulate bo
 ## 🛠 Tech Stack
 
 ### **Frontend**
-- React.js
-- Axios
+- EJS
 - Bootstrap / Tailwind CSS (if applicable)
 
 ### **Backend**
