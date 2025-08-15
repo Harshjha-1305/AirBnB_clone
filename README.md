@@ -39,6 +39,7 @@ The app allows users to explore listings, view property details, and simulate bo
 ---
 
 ## 📂 Project Structure (MVC)
+
 ├── models # Mongoose models for MongoDB
 ├── views # Frontend templates or React build
 ├── controllers # Request handling logic
@@ -52,31 +53,13 @@ The app allows users to explore listings, view property details, and simulate bo
 ## ⚙️ Installation & Setup
 
 1. **Clone the repository**
-   
-   git clone [<your-repo-url>](https://github.com/Harshjha-1305/AirBnB_clone)
-   cd airbnb-clone
-   
+
 2.  **Install dependencies**
-   
-  npm install
-  cd client && npm install
-  cd ..
   
 3. **Create a .env file in the root folder**
 
-  MONGO_URI=<your-mongodb-atlas-uri>
-  JWT_SECRET=<your-secret>
-  PORT=5000
-  
 4. **Run the app locally**
 
-  # Start backend
-  npm run dev
-  
-  # Start frontend
-  cd client && npm start
-  Visit:
-   http://localhost:3000
    
 
 ## 📸 Screenshot
