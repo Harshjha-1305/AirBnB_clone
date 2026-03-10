@@ -20,7 +20,8 @@ const listingRouter = require("./routes/listing.js");
 const reviewRouter = require("./routes/review.js");
 const userRouter = require("./routes/user.js");
 
-const dbUrl = process.env.ATLASDB_URL;
+// use an environment variable for Atlas connection; fall back to a local MongoDB instance for easy startup
+const dbUrl = process.env.ATLASDB_URL || 'mongodb://127.0.0.1:27017/majorproject';
 
 main()
   .then(() => {
@@ -100,6 +101,8 @@ app.use((err,req,res,next)=>{
   res.status(statusCode).render("error.ejs", {message});
 })
 
-app.listen(8080, () => {
-  console.log("server is listening to port 8080");
+const PORT = process.env.PORT || 8000;
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
